@@ -5,13 +5,13 @@ import './App.css';
 
 const App = () => (
   <TabWrapper>
-    <Tab title="Sales Rep">
+    <Tab title="Sales Rep" userId={203}>
       <RevenueGraph userId={203} />
     </Tab>
-    <Tab title="Manager">
+    <Tab title="Manager" userId={32} >
       <RevenueGraph userId={32} />
     </Tab>
-    <Tab title="Director">
+    <Tab title="Director" userId={2} >
       <RevenueGraph userId={2} />
     </Tab>
   </TabWrapper>

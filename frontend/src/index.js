@@ -18,6 +18,7 @@ const store = createStore(
   ),
 );
 
+// This is supposed to make the store available elsewhere, but I'm getting store is undefined
 ReactDOM.render(
   <Provider store={store}>
     <App />

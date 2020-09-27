@@ -1,4 +1,5 @@
 
+// action creator
 export const loadRevenueData = userId => (dispatch, getState) => {
   fetch(`http://localhost:8000/revenue/${userId}`)
     .then(d => d.json())

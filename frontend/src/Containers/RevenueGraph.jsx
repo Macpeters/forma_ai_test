@@ -4,6 +4,15 @@ import { connect } from 'react-redux';
 import RevenueGraph from '../Components/RevenueGraph';
 import { loadRevenueData } from '../actions';
 
-const Container = () => null;
+// This never gets called
+const Container = (userId) => {
+  console.log("CONTAINER")
+  // return dispatch(loadRevenueData(userId))
+  // return state.revenue;
+}
+
+Container.propTypes = {
+  userId: PropTypes.number.isRequired
+}
 
 export default Container;

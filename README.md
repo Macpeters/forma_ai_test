@@ -36,7 +36,10 @@ Please don't hesitate to reach out if you have any questions whatsoever.
 ## Running
 https://www.digitalocean.com/community/tutorials/build-a-to-do-application-using-django-and-react
 
-``` python manage.py runserver ```
+```py
+pipenv shell
+python manage.py runserver
+```
 
 ## Console
 

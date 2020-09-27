@@ -6,6 +6,7 @@ import Tabs from '@material-ui/core/Tabs';
 import { default as MaterialTab } from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+import RevenueGraph from './RevenueGraph';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -62,7 +63,8 @@ function TabWrapper({ children }) {
       </AppBar>
       {React.Children.toArray(children).map((tab, i) => (
         <TabPanel key={tab.props.title} value={value} index={i}>
-          {tab.props.children}
+          {/* Move this to RevenueGraph Container */}
+          <RevenueGraph userId={tab.props.userId} />
         </TabPanel>
       ))}
     </div>
